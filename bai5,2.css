@@ -1,0 +1,146 @@
+body{
+    style{
+        box-sizing: border-box;
+    }
+    b:hover{
+        background-color: #3814cb;
+        border-style: solid;
+        border-color: #3912d5;
+    }
+    a{
+        color: rgb(250, 7, 7);
+        text-decoration: none;
+        outline: none;
+    }
+    .div2{
+        background-color: rgb(228, 248, 7); border-style: solid; border-color: rgb(233, 245, 11); border-width: 20px; border-radius: 20px;
+        text-align: center;
+    }
+    .div2:hover{
+        background-color: #1f9ee2;
+        border-color: #1b79d7;
+    }
+    p, b, i, a, h1, h2, h3{
+        font-family: Roboto Slab;
+    }
+    .scroll-container-wrapper {
+        display: flex;
+        height: 300px; 
+      }
+    
+      .fixed-scroll-container {
+        width: 120px;
+        height: 625px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        margin-right: 5px;
+        position: sticky;
+        top: 0; 
+        justify-content: center;
+        text-align: center;
+        background-color: yellowgreen;
+      }
+    .body3{
+        display: flex;
+        justify-content: space-between;
+    }
+    .co1{
+        width: 50%;
+        height: 500px;
+        padding: 25px;
+        color: rgb(10, 10, 10);
+    }
+    .co2{
+        width: 33.33%;
+        height: 500px;
+        padding: 1px;
+        padding-left: 5px;
+        color: plum;
+    }
+    .co3{
+        width: 50%;
+        height: 130px;
+        padding: 25px;
+        color: rgb(10, 10, 10);
+    }
+      .scroll-container {
+        flex: 1; 
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border: 1px solid #db0f0f;
+        height: 625px;
+        margin-left: 20px; 
+    }
+    .div1{
+        background-color: #49494b;
+        border-radius: 20px;
+        border: 2px solid transparent;
+        transition: border-color 0.3s;
+        height: 480px;
+    }
+    .div1:hover{
+        background-color: rgb(235, 232, 240);
+    }
+    .div1:active{
+        border-style: solid;
+        border-color: black;
+    }
+    .div3{
+        background-color: #b6e716;
+        border-radius: 20px;
+        border: 2px solid transparent;
+        transition: border-color 0.3s;
+        height: 150px;
+        border-style: solid; 
+        border-color: #1818da; 
+    }
+    .div3:hover{
+        background-color: rgb(80, 7, 251);
+        border-color: rgb(75, 3, 242); 
+    }
+    .div3:active{
+        border-style: solid;
+        border-color: orange;
+    }
+    .co4{
+        flex: 40%;
+        height: 300px;
+        padding: 25px;
+        color: rgb(10, 10, 10);
+    }
+    .co5{
+        flex: 20%;
+        height: 300px;
+        padding: 25px;
+        color: rgb(230, 10, 10);
+    }
+    .inline {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    @media (max-width: 761px) {
+        .body3{
+            display: flex;
+            flex-direction: column;
+        }
+        .fixed-scroll-container * {
+            display: none;
+        }
+        .co1{
+            width: 100%;
+        }
+        .co2{
+            width: 100%;
+        }
+        .co3{
+            width: 100%;
+        }
+        .co4{
+            width: 100%;
+        }
+        .co5{
+            width: 100%;
+        }
+    }
+}
